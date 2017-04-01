@@ -18,7 +18,7 @@ Completed user stories:
  
 Notes:
 
-Spent some time making the UI work across multiple phone resolutions by playing around with the RelativeLayout.
+The icons for tabBarItem seem can not find the correct icons in the Assets folder.
 
 Walkthrough of all user stories:
 
