@@ -40,7 +40,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                                  delegateQueue:OperationQueue.main
         )
         MBProgressHUD.showAdded(to: self.view, animated: true)
+        
         let task : URLSessionDataTask = session.dataTask(with: request as URLRequest,completionHandler: { (dataOrNil, response, error) in
+            sleep(1)
              MBProgressHUD.hide(for: self.view, animated: true)
             if let httpError = error {
                 print("\(httpError)")
