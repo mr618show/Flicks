@@ -8,27 +8,33 @@
 
 import UIKit
 import AFNetworking
+//import PKHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var movies: [NSDictionary]?
+    var endpoint: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         
+        //print ( (endpoint))
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
-        //let request = NSURLRequest(url: url as! URL)
-        let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+
+        let url = URL(string:"https://api.themoviedb.org/3/movie/\(endpoint!)?api_key=\(apiKey)")
+        //let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let request = NSURLRequest(url: url!)
+        //let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
 
         let session = URLSession(configuration: URLSessionConfiguration.default,
                                  delegate:nil,
                                  delegateQueue:OperationQueue.main
         )
 
-        let task : URLSessionDataTask = session.dataTask(with: request,completionHandler: { (dataOrNil, response, error) in
+        let task : URLSessionDataTask = session.dataTask(with: request as URLRequest,completionHandler: { (dataOrNil, response, error) in
             if let httpError = error {
                 print("\(httpError)")
             } else {
@@ -66,11 +72,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
-        let posterPath = movie["poster_path"] as! String
-        let baseurl = "https://image.tmdb.org/t/p/w500"
-        let imageUrl = NSURL(string: baseurl + posterPath)
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
+        let baseurl = "https://image.tmdb.org/t/p/w500/"
+        let posterPath = movie["poster_path"] as! String
+        
+        let imageUrl = NSURL(string: baseurl + posterPath)
+        
         cell.posterView.setImageWith(imageUrl! as URL)
         print("row \(indexPath.row)")
         return cell

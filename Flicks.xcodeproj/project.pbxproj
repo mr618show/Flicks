@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A50A30961E8B0ED700CD4F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A30951E8B0ED700CD4F74 /* AppDelegate.swift */; };
 		A50A309B1E8B0ED700CD4F74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A30991E8B0ED700CD4F74 /* Main.storyboard */; };
-		A50A309D1E8B0ED700CD4F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50A309C1E8B0ED700CD4F74 /* Assets.xcassets */; };
 		A50A30A01E8B0ED700CD4F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50A309E1E8B0ED700CD4F74 /* LaunchScreen.storyboard */; };
 		A50A30A81E8B103700CD4F74 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A30A71E8B103700CD4F74 /* MoviesViewController.swift */; };
 		A50A30AB1E8B92C700CD4F74 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A30AA1E8B92C700CD4F74 /* MovieCell.swift */; };
@@ -24,7 +23,6 @@
 		A50A30921E8B0ED700CD4F74 /* Flicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50A30951E8B0ED700CD4F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50A309A1E8B0ED700CD4F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A50A309C1E8B0ED700CD4F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50A309F1E8B0ED700CD4F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50A30A11E8B0ED700CD4F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50A30A71E8B103700CD4F74 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				A50A30A91E8B928C00CD4F74 /* Views */,
 				A50A30951E8B0ED700CD4F74 /* AppDelegate.swift */,
 				A50A30991E8B0ED700CD4F74 /* Main.storyboard */,
-				A50A309C1E8B0ED700CD4F74 /* Assets.xcassets */,
 				A50A309E1E8B0ED700CD4F74 /* LaunchScreen.storyboard */,
 				A50A30A11E8B0ED700CD4F74 /* Info.plist */,
 			);
@@ -174,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50A30A01E8B0ED700CD4F74 /* LaunchScreen.storyboard in Resources */,
-				A50A309D1E8B0ED700CD4F74 /* Assets.xcassets in Resources */,
 				A50A309B1E8B0ED700CD4F74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
