@@ -8,7 +8,7 @@
 
 import UIKit
 import AFNetworking
-//import PKHUD
+import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -21,7 +21,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
+    
+        networkRequest()
+    }
+    
         //print ( (endpoint))
+        
+        func networkRequest(){
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
         let url = URL(string:"https://api.themoviedb.org/3/movie/\(endpoint!)?api_key=\(apiKey)")
@@ -33,8 +39,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                                  delegate:nil,
                                  delegateQueue:OperationQueue.main
         )
-
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         let task : URLSessionDataTask = session.dataTask(with: request as URLRequest,completionHandler: { (dataOrNil, response, error) in
+             MBProgressHUD.hide(for: self.view, animated: true)
             if let httpError = error {
                 print("\(httpError)")
             } else {
@@ -46,13 +53,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                     }
                 }
             }
+           
         });
         task.resume()
-        
-
-        // Do any additional setup after loading the view.
     }
-
+        // Do any additional setup after loading the view.
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -13,6 +13,8 @@
 		A50A30A81E8B103700CD4F74 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A30A71E8B103700CD4F74 /* MoviesViewController.swift */; };
 		A50A30AB1E8B92C700CD4F74 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A30AA1E8B92C700CD4F74 /* MovieCell.swift */; };
 		A51E71631E8D89FB0097B4A7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E71621E8D89FB0097B4A7 /* DetailViewController.swift */; };
+		A51E71651E9029470097B4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51E71641E9029470097B4A7 /* Assets.xcassets */; };
+		A51E71671E9032540097B4A7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A51E71661E9032540097B4A7 /* Contents.json */; };
 		C979FEBBADB76074F42F84B7 /* Pods_Flicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221080E59672DD3A5894E71E /* Pods_Flicks.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		A50A30A71E8B103700CD4F74 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		A50A30AA1E8B92C700CD4F74 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		A51E71621E8D89FB0097B4A7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A51E71641E9029470097B4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/gezimao/Documents/codepathUniv/Flicks/Flicks/Assets.xcassets; sourceTree = "<absolute>"; };
+		A51E71661E9032540097B4A7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			children = (
 				A50A30A71E8B103700CD4F74 /* MoviesViewController.swift */,
 				A51E71621E8D89FB0097B4A7 /* DetailViewController.swift */,
+				A51E71641E9029470097B4A7 /* Assets.xcassets */,
+				A51E71661E9032540097B4A7 /* Contents.json */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50A30A01E8B0ED700CD4F74 /* LaunchScreen.storyboard in Resources */,
+				A51E71651E9029470097B4A7 /* Assets.xcassets in Resources */,
 				A50A309B1E8B0ED700CD4F74 /* Main.storyboard in Resources */,
+				A51E71671E9032540097B4A7 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
