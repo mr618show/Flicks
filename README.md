@@ -1,5 +1,6 @@
 # Flicks
 iOS bootcamp 2017 project 1
+
 This is an iOS demo application for displaying the latest box office movies using the [The Movie Database API](https://www.themoviedb.org/documentation/api).
 
 Time spent: 10 hours spent in total
