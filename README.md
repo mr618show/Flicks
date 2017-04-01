@@ -9,9 +9,9 @@ Completed user stories:
 
  * [x] Required: User can view a list of movies currently playing in theaters from The Movie Database.
  * [x] Required: User can click on a movie in the list to bring up a details page with additional information such as synopsis
- * [ ] Required: User sees loading state while waiting for movies API.
- * [ ] Required: User sees an error message when there's a networking error. You may not use UIAlertController or a 3rd party library to display the error. 
- * [ ] Required: User can pull to refresh the movie list.
+ * [x] Required: User sees loading state while waiting for movies API.
+ * [x] Required: User sees an error message when there's a networking error. You may not use UIAlertController or a 3rd party library to display the error. 
+ * [x] Required: User can pull to refresh the movie list.
  * [x] Optional: Add a tab bar for Now Playing or Top Rated movies.
  * [ ] Optional: Implement a UISegmentedControl to switch between a list view and a grid view. 
  * [ ] Optional: Add a search bar.
