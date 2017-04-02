@@ -32,7 +32,24 @@ class DetailViewController: UIViewController {
         if let posterPath = movie["poster_path"] as? String{
             let imageUrl = NSURL(string: baseurl + posterPath)
             posterImageView.setImageWith(imageUrl! as URL)
-            
+            /*posterImageView.setImageWith(imageUrl! as URL, placeholderImage: nil, success: { (imageUrl, imageResponse, image) -> Void in
+                if imageResponse != nil {
+                    print ("Image was Not cashed, fade in image")
+                    self.posterImageView.alpha = 0.0
+                    self.posterImageView.image = image
+                    UIView.animate(withDuration: 0.3 , animations: {<#T##() -> Void#>in self.posterImageView.alpha = 1.0})
+                }
+                else {
+                    print ("Image was cased so just update the image")
+                    self.posterImageView.image = image
+                }
+                
+            }, failure: { (imageUrl, imageResponse, image) in
+                self.posterImageView.image = image
+            }) */
+        }
+        else {
+            self.posterImageView.image = nil
         }
 
         
