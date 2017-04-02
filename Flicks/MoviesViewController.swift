@@ -88,7 +88,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let imageUrl = NSURL(string: baseurl + posterPath)
         
         cell.posterView.setImageWith(imageUrl! as URL)
-        print("row \(indexPath.row)")
+        //print("row \(indexPath.row)")
         return cell
         
     }
